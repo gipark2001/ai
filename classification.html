@@ -24,19 +24,45 @@
     <h1>Classification</h1>
     <img src="reinfor_learning.jpg">
     <p>
-      Classification is the process of predicting the class of given data points. Classes are sometimes called as targets/ labels or categories.
-      Classification predictive modeling is the task of approximating a mapping function (f) from input variables (X) to discrete output variables (y).
-      For example, spam detection in email service providers can be identified as a classification problem.
-      This is s binary classification since there are only 2 classes as spam and not spam.
-      A classifier utilizes some training data to understand how given input variables relate to the class.
-      In this case, known spam and non-spam emails have to be used as the training data. When the classifier is trained accurately, it can be used to detect an unknown email.
-      Classification belongs to the category of supervised learning where the targets also provided with the input data.
-      There are many applications in classification in many domains such as in credit approval, medical diagnosis, target marketing etc.
-      There are two types of learners in classification
-      <ul>
-        <li>lazy learners</li>
-        <li>eager learners</li>
-      </ul>
+      <h3>Classification</h3>
+      is the type of Supervised Learning in which labelled data can use, and this data is used to make predictions in a non-continuous form.<br>
+      The output of the information is not always continuous, and the graph is non-linear. In the classification technique, <br>
+      the algorithm learns from the data input given to it and then uses this learning to classify new observation. This data set may merely be bi-class,<br>
+       or it may be multi-class too. Ex:- One of the examples of classification problems is to check whether the email is spam or not spam <br>
+       by train the algorithm for different spam words or emails.
+       <h4>Types of Classification Algorithms:</h4>
+       <p>
+         There are many Classification algorithms are present in machine learning, which used for different classification applications. Some of the main classification algorithms are as follows <br>
+         <h4>Logistic Regression/Classification:</h4>
+         Logistic regression falls under the category of supervised learning; it measures the relationship between the dependent variable which is categorical <br>
+         with one or more than one independent variables by estimating probabilities using a logistic/sigmoid function. <br>
+         Logistic regression can generally use where the dependent variable is Binary or Dichotomous. <br>
+         It means that the dependent variable can take only two possible values like “Yes or No”, “Living or Dead”.
+         <h4>K-Nearest Neighbours:</h4>
+         KNN algorithm is one of the most straightforward algorithms in classification, and it is one of the most used learning algorithms. <br>
+         A majority vote of an object is classified by its neighbours, with the purpose being assigned to the class most common among its k nearest neighbours. <br>
+         It can also use for regression — output is the value of the object (predicts continuous values). This value is the average (or median) of the benefits of its k nearest neighbours.
+         <h4>Support Vector Machines:</h4>
+         A Support Vector Machine is a type of Classifier, in which a discriminative classifier formally defined by a separating hyperplane. <br>
+         The algorithm outputs an optimal hyperplane which categorises new examples. In two dimensional space, this hyperplane is a line dividing a plane into two parts <br>
+         wherein each class lay on either side.
+         <h4>Kernel Support Vector Machines:</h4>
+         Kernel-SVM algorithm is one the algorithms used in classification technique, and it is mathematical functions set that defined as the kernel. <br>
+         The purpose of the core is to take data as input and transform it into the required form. Different SVM algorithms use different types of kernel functions. <br>
+         These functions can be different types. For example linear and nonlinear functions, polynomial functions, radial basis function, and sigmoid functions.
+         <h4>Naive Bayes:</h4>
+         Naive Bayes is a type of Classification technique, which based on Bayes’ Theorem with an assumption of independence among predictors. <br>
+         In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other function. <br>
+         Naive Bayes model is accessible to build and particularly useful for extensive datasets.
+         <h4>Decision Tree Classification:</h4>
+         Decision tree makes classification models in the form of a tree structure. An associated decision tree incrementally developed and at the same time <br>
+         It breaks down a large data-set into smaller subsets. The final result is a tree with decision nodes and leaf nodes. A decision node (e.g., Root) has two or more branches. <br>
+         Leaf node represents a classification or decision. The first decision node in a tree which corresponds to the best predictor called root node. <br>
+         Decision trees can handle both categorical and numerical data.
+         <h4>Random Forest Classification:</h4>
+         Random Forest is a supervised learning algorithm. It creates a forest and makes it somehow casual. The wood it builds is an ensemble of Decision Trees, <br>
+         it most of the time the decision tree algorithm trained with the “bagging” method, which is a combination of learning models increases the overall result.
+       </p>
     </p>
   </body>
 </html>
