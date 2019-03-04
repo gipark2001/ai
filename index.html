@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title> A.I </title>
+  <title> A.I (gipark2001@naver.com)</title>
   <meta charset="utf-8">
   <style>
     body {
@@ -25,37 +25,24 @@
   <a href="ai_machine_deep.html" style="color:blue;"><h2>  1. Artificial Intelligence vs Machine Learning vs Deep Learning</h2></a>
   <h2>  2.Type of learning algorithms </h2>
   <ul>
-    <li><a href="super_learning.html" style="color:blue;"><h3>Supervised learning</h3></li></a>
-    <li><a href="unsuper_learning.html" style="color:blue;"><h3>Unsupervised learning</h3></li></a>
-    <li><a href="reinfor_learning.html" style="color:blue;"><h3>Reinforcement learning</h3></li></a>
+    <li><a href="super_learning.html" style="color:blue;"><h3>Supervised learning</h3></a></li>
+    <li><a href="unsuper_learning.html" style="color:blue;"><h3>Unsupervised learning</h3></a></li>
+    <li><a href="reinfor_learning.html" style="color:blue;"><h3>Reinforcement learning</h3></a></li>
   </ul>
   <img src="super_unsuper_rein.jpg" width="500">
   <h2><a href="deep_learning.html"></a>3. Deep Learning </h2>
   <ol>
-    <li>Definition</li>
-      <ul>
-        <li>use a cascade of multiple layers of nonlinear processing units for feature extraction and transformation. Each successive layer uses the output from the previous layer as input.</li>
-        <li>learn in supervised (e.g., classification) and/or unsupervised (e.g., pattern analysis) manners.</li>
-        <li>learn multiple levels of representations that correspond to different levels of abstraction; the levels form a hierarchy of concepts.</li>
-      </ul>
-      <p>
-        In deep learning, each level learns to transform its input data into a slightly more abstract and composite representation.<br>
-        In an image recognition application, the raw input may be a matrix of pixels; the first representational layer may abstract the pixels and encode edges;<br>
-        the second layer may compose and encode arrangements of edges; the third layer may encode a nose and eyes; and the fourth layer may recognize that the image contains a face.<br>
-        Importantly, a deep learning process can learn which features to optimally place in which level on its own. <br>
-        (Of course, this does not completely obviate the need for hand-tuning; for example, varying numbers of layers and layer sizes can provide different degrees of abstraction.)
-      </p>
-    <li>Artificial Neural Network</li>
-    <img src="neural_network.jpg" width="500">
+    <li><a href="machine_neural.html" style="color:blue">Difference between Machin Learning and Neural Network</a></li>
+    <li>History of Neural Nets</li>
     <p>
-      Artificial neural networks (ANNs) or connectionist systems are computing systems inspired by the biological neural networks that constitute animal brains. Such systems learn (progressively improve their ability) to do tasks by considering examples, generally without task-specific programming. For example, in image recognition, they might learn to identify images that contain cats by analyzing example images that have been manually labeled as "cat" or "no cat" and using the analytic results to identify cats in other images. They have found most use in applications difficult to express with a traditional computer algorithm using rule-based programming.
-      An ANN is based on a collection of connected units called artificial neurons, (analogous to biological neurons in a biological brain). Each connection (synapse) between neurons can transmit a signal to another neuron. The receiving (postsynaptic) neuron can process the signal(s) and then signal downstream neurons connected to it. Neurons may have state, generally represented by real numbers, typically between 0 and 1. Neurons and synapses may also have a weight that varies as learning proceeds, which can increase or decrease the strength of the signal that it sends downstream.
-    </p>
-    <li>Key Concepts of Deep Neural Networks</li>
-    <p>
-      Deep-learning networks are distinguished from the more commonplace single-hidden-layer neural networks by their depth; that is, the number of node layers through which data must pass in a multistep process of pattern recognition.
-      Earlier versions of neural networks such as the first perceptrons were shallow, composed of one input and one output layer, and at most one hidden layer in between. More than three layers (including input and output) qualifies as “deep” learning. So deep is not just a buzzword to make algorithms seem like they read Sartre and listen to bands you haven’t heard of yet. It is a strictly defined term that means more than one hidden layer.
-      In deep-learning networks, each layer of nodes trains on a distinct set of features based on the previous layer’s output. The further you advance into the neural net, the more complex the features your nodes can recognize, since they aggregate and recombine features from the previous layer.
+      It all started when Warren McCulloch and Walter Pitts created the first model of an NN in 1943. Their model was purely based on mathematics and algorithms and couldn’t be tested due to the lack of computational resources.
+      Later on, in 1958, Frank Rosenblatt created the first ever model that could do pattern recognition. This would change it all. The Perceptron. However, he only gave the notation and the model. The actual model still could not be tested. There were relatively minor researches done before this.
+      The first NNs that could be tested and had many layers were published by Alexey Ivakhnenko and Lapa in 1965.
+      After these, the research on NNs stagnated due to high feasibility of Machine Learning models. This was done by Marvin Minsky and Seymour Papert in 1969.
+      This stagnation however, was relatively short-termed as 6 years later in 1975 Paul Werbos came up with Back-propagation, which solved the XOR problem and in general made NN learning more efficient.
+      Max-pooling was later introduced in 1992 which helped with 3D object recognition as it helped with least shift invariance and tolerance to deformation.
+      Between 2009 and 2012, Recurrent NNs and Deep Feed Forward NNs created by Jürgen Schmidhuber’s research group went on to win 8 international competitions in pattern recognition and machine learning.
+      In 2011, Deep NNs started incorporating convolutional layers with max-pooling layers whose output was then passed to several fully connected layers which were followed by an output layer. These are called Convolutional Neural Networks.they aggregate and recombine features from the previous layer.
     </p>
   </ol>
 </body>
