@@ -44,6 +44,34 @@
       Between 2009 and 2012, Recurrent NNs and Deep Feed Forward NNs created by Jürgen Schmidhuber’s research group went on to win 8 international competitions in pattern recognition and machine learning.
       In 2011, Deep NNs started incorporating convolutional layers with max-pooling layers whose output was then passed to several fully connected layers which were followed by an output layer. These are called Convolutional Neural Networks.they aggregate and recombine features from the previous layer.
     </p>
+    <li>What really IS a Neural Network?</li>
+      <p>
+        A good way to think of an NN is as a composite function. You give it some input and it gives you some output.
+        There are 3 parts that make up the architecture of a basic NN.
+        <ul>
+          <li><a href="unit_neuron.html"></a>Units / Neurons</li>
+          <li><a href="connect_weight_para.html"></a>Connections / Weights / Parameters</li>
+          <li><a href="biases.html"></a>Biases</li>
+        </ul>
+        These are: All of the things mentioned above are what you need to construct the bare bones architecture of an NN.
+        You can think of these as the building blocks/bricks of a building. Depending on how you want the building to function, you will arrange the bricks and vice versa. The cement can be thought of as the weights. No matter how strong your weights are, if you don’t have a good amount of bricks for the problem at hand, the building will crumble to the ground. However, you can just get the building to function with minimal accuracy(using the least amount of bricks) and then, progressively build upon that architecture to solve a problem.
+      </p>
+    <li>Units / Neurons</li>
+      <p>
+        Being the least important out of the three parts of an NNs architectures, these are functions which contain weights and biases in them and wait for the data to come them. After the data arrives, they, perform some computations and then use an activation function to restrict the data to a range(mostly).
+        Think of these units as a box containing the weights and the biases. The box is open from 2 ends. One end receives data, the other end outputs the modified data. The data then starts to come into the box, the box then multiplies the weights with the data and then adds a bias to the multiplied data. This is a single unit which can also be thought of as a function. This function is similar to this, which is the function template for a straight line <br>
+        <img src="basis.jpg" width="200">
+        <br>Being the least important out of the three parts of an NNs architectures, these are functions which contain weights and biases in them and wait for the data to come them. After the data arrives, they, perform some computations and then use an activation function to restrict the data to a range(mostly).
+        Think of these units as a box containing the weights and the biases. The box is open from 2 ends. One end receives data, the other end outputs the modified data. The data then starts to come into the box, the box then multiplies the weights with the data and then adds a bias to the multiplied data. This is a single unit which can also be thought of as a function. This function is similar to this, which is the function template for a straight line:
+      </p>
+    <li>Connections / Weights / Parameters</li>
+      <p>
+        Being the most important part of an NN, these(and the biases) are the numbers the NN has to learn in order to generalize to a problem. That is all you need to know at this point.
+      </p>
+    <li>Biases</li>
+      <p>
+        These numbers represent what the NN “thinks” it should add after multiplying the weights with the data. Of course, these are always wrong but the NN then learns the optimal biases as well.
+      </p>
   </ol>
 </body>
 </html>
