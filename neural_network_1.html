@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neural Network</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        border-bottom: solid gray 1px;
+        margin: 0;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>What really IS a Neural Network?</h1>
+    <p>
+      A good way to think of an NN is as a composite function. You give it some input and it gives you some output. There are 3 parts that make up the architecture of a basic NN.
+    <ul>
+      <li><a href="#unit_neuron" style="color:blue;">Units / Neurons</a></li>
+      <li><a href="#connection" style="color:blue;">Connections / Weights / Parameters</a></li>
+      <li><a href="#biases" style="color:blue;">Biases</a></li>
+    </ul>
+    <p>
+      All of the things mentioned above are what you need to construct the bare bones architecture of an NN.
+      You can think of these as the building blocks/bricks of a building. Depending on how you want the building to function, you will arrange the bricks and vice versa. The cement can be thought of as the weights. No matter how strong your weights are, if you don’t have a good amount of bricks for the problem at hand, the building will crumble to the ground. However, you can just get the building to function with minimal accuracy(using the least amount of bricks) and then, progressively build upon that architecture to solve a problem.
+    <div id="unit_neuron">
+      <strong>Units / Neurons</strong><br>Being the least important out of the three parts of an NNs architectures, these are functions which contain weights and biases in them and wait for the data to come them. After the data arrives, they, perform some computations and then use an activation function to restrict the data to a range(mostly).
+      Think of these units as a box containing the weights and the biases. The box is open from 2 ends. One end receives data, the other end outputs the modified data. The data then starts to come into the box, the box then multiplies the weights with the data and then adds a bias to the multiplied data. This is a single unit which can also be thought of as a function. This function is similar to this, which is the function template for a straight line
+    </div> <br>
+    <div id="connection">
+      <strong>Connections / Weights / Parameters</strong><br>Being the most important part of an NN, these(and the biases) are the numbers the NN has to learn in order to generalize to a problemThat is all you need to know at this point.<br>
+    </div> <br>
+    <div id="biases">
+      <strong>Biases</strong><br>These numbers represent what the NN “thinks” it should add after multiplying the weights with the data. Of course, these are always wrong but the NN then learns the optimal biases as well.
+    </div>
+    </p>
+  </body>
+</html>
