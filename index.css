@@ -2,7 +2,7 @@ body {
   margin: 0px;
 }
 a {
-  color: black;
+  color: blue;
   text-decoration: none;
 }
 h1 {
@@ -11,7 +11,4 @@ h1 {
   border-bottom: solid gray 1px;
   margin: 0;
   padding: 10px;
-}
-.article {
-  color: blue;
 }
