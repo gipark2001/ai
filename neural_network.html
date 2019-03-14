@@ -28,12 +28,23 @@
       <article class="activation">
         <h2><li>Activation function</li> </h2>
         <p>
-          The result of the summation function, that is the weighted sum, is transformed to a desired output by employing a non linear function (fNL), also known as activation function. Since the desired output is probability of an event in this case, a sigmoid function can be used to restrict the results (y) between 0 and 1.
+          Activation functions are really important for a Artificial Neural Network to learn and make sense of something really complicated and Non-linear complex functional mappings between the inputs and response variable.They introduce non-linear properties to our Network.Their main purpose is to convert a input signal of a node in a A-NN to an output signal. That output signal now is used as a input in the next layer in the stack.
+          Specifically in A-NN we do the sum of products of inputs(X) and their corresponding Weights(W) and apply a Activation function f(x) to it to get the output of that layer and feed it as an input to the next layer.
         </p>
-        <img src="img/sigmoid_act.jpg">
-        <p>
-          Other commonly used activation functions are Rectified Linear Unit (ReLU), Tan Hyperbolic (tanh) and Identity function.
-        </p>
+        <ul>
+          <li>Sigmoid</li>
+          <img src="img/sigmoid_act.jpg">
+          <p>
+            Sigmoid function takes a real-valued number and “squashes” it into range between 0 and 1, i.e.,
+            <strong>σ(x)∈(0,1)</strong>In particular, large negative numbers become 0 and large positive numbers become 1. Moreover, the sigmoid function has a nice interpretation as the firing rate of a neuron: from not firing at all (0) to fully-saturated firing at an assumed maximum frequency
+          </p>
+          <li>Tanh</li>
+          <img src="img/tanh_act.jpg">
+          <p>
+            The hyperbolic tangent (tanh) function (used for hidden layer neuron output) is an alternative to Sigmoid function. It is defined by the formula
+          </p>
+        </ul>
+
       </article>
       <article class="loss_function">
         <h2><li>Loss Function</li> </h2>
@@ -45,17 +56,10 @@
           The loss functions are helpful to train a neural network. Given an input and a target, they calculate the loss, i.e difference between output and target variable.
         </p>
       </article>
-      <article class="Back Propogation and Optimisation Function">
+      <article class="train_network">
+        <h2><li>Training Network</li> </h2>
         <p>
-          Error J(w) is a function of internal parameters of model i.e weights and bias. For accurate predictions, one needs to minimize the calculated error. In a neural network, this is done using back propagation. The current error is typically propagated backwards to a previous layer, where it is used to modify the weights and bias in such a way that the error is minimized. The weights are modified using a function called Optimization Function.
-        </p>
-        <img src="img/gradient.jpg">
-        <p>
-          Optimisation functions usually calculate the gradient i.e. the partial derivative of loss function with respect to weights, and the weights are modified in the opposite direction of the calculated gradient. This cycle is repeated until we reach the minima of loss function.
-        </p>
-        <img src="img/weight_modified.jpg">
-        <p>
-          Thus, the components of a neural network model i.e the activation function, loss function and optimization algorithm play a very important role in efficiently and effectively training a Model and produce accurate results. Different tasks require a different set of such functions to give the most optimum results.
+
         </p>
       </article>
     </ol>
