@@ -8,7 +8,7 @@
   </head>
   <body>
     <ol>
-      <div class="perceptron">
+      <div class="neural_network" id="aritlce_1">
         <h2><li>Perceptrons</li></h2>
         <p>
           The architecture and behavior of a perceptron is very similar to biological neurons, and is often considered as the most basic form of neural network. Other kinds of neural networks were developed after the perceptron, and their diversity and applications continue to grow. It is easier to explain the constitutes of a neural network using the example of a single layer perceptron.
@@ -18,14 +18,14 @@
           A single layer perceptron works as a linear binary classifier. Consider a feature vector [x1, x2, x3] that is used to predict the probability (p) of occurrence of a certain event.
         </p>
       </div>
-      <div class="weight_factor">
+      <div class="neural_network" id="article_2">
         <h2><li>Weighing factors</li></h2>
         <p>
           Each input in the feature vector is assigned its own relative weight (w), which decides the impact that the particular input needs in the summation function. In relatively easier terms, some inputs are made more important than others by giving them more weight so that they have a greater effect in the summation function (y). A bias (wo) is also added to the summation.
         </p>
         <img src="img/weight_factor.jpg">
       </div>
-      <div class="activation">
+      <div class="neural_network" id="article_3">
         <h2><li>Activation function</li> </h2>
         <p>
           Activation functions are really important for a Artificial Neural Network to learn and make sense of something really complicated and Non-linear complex functional mappings between the inputs and response variable.They introduce non-linear properties to our Network.Their main purpose is to convert a input signal of a node in a A-NN to an output signal. That output signal now is used as a input in the next layer in the stack.
@@ -33,21 +33,21 @@
         </p>
         <ul>
           <li>Sigmoid</li>
+          <img src="img/sigmoid_act.jpg" width="1000" height="auto">
           <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/faaa0c014ae28ac67db5c49b3f3e8b08415a3f2b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:15.89ex; height:5.509ex;" alt="{\displaystyle f(x)={\frac {1}{1+e^{-x}}}}">
-          <img src="img/sigmoid_act.jpg">
           <p>
             Sigmoid function takes a real-valued number and “squashes” it into range between 0 and 1, i.e.,
             <strong>σ(x)∈(0,1)</strong>In particular, large negative numbers become 0 and large positive numbers become 1. Moreover, the sigmoid function has a nice interpretation as the firing rate of a neuron: from not firing at all (0) to fully-saturated firing at an assumed maximum frequency
           </p>
           <li>Tanh</li>
           <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f1b5f1173b93d23c64a0d3508028f8649a5a14e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:26.45ex; height:5.843ex;" alt="{\displaystyle f(x)=\tanh x={\frac {e^{x}-e^{-x}}{e^{x}+e^{-x}}}}">
-          <img src="img/tanh_act.jpg">
+          <img src="img/tanh_act.jpg" width="1000" height="auto">
           <p>
             The hyperbolic tangent (tanh) function (used for hidden layer neuron output) is an alternative to Sigmoid function. It is defined by the formula
           </p>
           <li>Rectified Linear(ReLU)</li>
           <img id="https://t1.daumcdn.net/cfile/tistory/246B094F57F226C036" src="https://t1.daumcdn.net/cfile/tistory/246B094F57F226C036" width="244" height="91" style="width: 244px; height: 91px;">
-          <img src="img/relu_act.jpg">
+          <img src="img/relu_act.jpg" width="700" height="auto">
           <p>
             The ReLU function is more effectively than the widely used logistic sigmoid and its more practical counterpart, the hyperbolic tangent.
           </p>
@@ -59,7 +59,7 @@
           </p>
         </ul>
       </div>
-      <div class="loss_function">
+      <div class="neural_network" id="article_4">
         <h2><li>Loss Function</li> </h2>
         <p>
           In most learning networks, error is calculated as the difference between the actual output and the predicted output.
@@ -69,8 +69,45 @@
           The loss functions are helpful to train a neural network. Given an input and a target, they calculate the loss, i.e difference between output and target variable.
         </p>
       </div>
-      <div class="train_network">
-        <h2><a href="train_network.html"><li>Training Network</li></a> </h2>
+      <div class="neural_network" id="article_5">
+        <h2>What are Optimization Algorithms ?</h2>
+        <p>
+          Optimization algorithms helps us to minimize (or maximize) an Objective function (another name for Error function) E(x) which is simply a mathematical function dependent on the Model’s internal learnable parameters which are used in computing the target values(Y) from the set of predictors(X) used in the model. For example — we call the Weights(W) and the Bias(b) values of the neural network as its internal learnable parameters which are used in computing the output values and are learned and updated in the direction of optimal solution i.e minimizing the Loss by the network’s training process and also play a major role in the training process of the Neural Network Model .
+          <strong>The internal parameters of a Model play a very important role in efficiently and effectively training a Model and produce accurate results. This is why we use various Optimization strategies and algorithms to update and calculate appropriate and optimum values of such model’s parameters which influence our Model’s learning process and the output of a Model.</strong>
+        </p>
+      </div>
+      <div class="neural_network" id="article_6">
+        <h2>Gradient Descent</h2>
+        <p>
+          Gradient Descent is the most important technique and the foundation of how we train and optimize Intelligent Systems.
+          θ=θ−η⋅∇J(θ) — is the formula of the parameter updates, where ‘η’ is the learning rate ,’∇J(θ)’ is the Gradient of Loss function-J(θ) w.r.t parameters-‘θ’.
+          <br>It is the most popular Optimization algorithms used in optimizing a Neural Network. Now gradient descent is majorly used to do Weights updates in a Neural Network Model , i.e update and tune the Model’s parameters in a direction so that we can minimize the Loss function. Now we all know a Neural Network trains via a famous technique called Backpropagation , in which we first propagate forward calculating the dot product of Inputs signals and their corresponding Weights and then apply a activation function to those sum of products, which transforms the input signal to an output signal and also is important to model complex Non-linear functions and introduces Non-linearities to the Model which enables the Model to learn almost any arbitrary functional mappings.<br>After this we propagate backwards in the Network carrying Error terms and updating Weights values using Gradient Descent, in which we calculate the gradient of Error(E) function with respect to the Weights (W) or the parameters , and update the parameters (here Weights) in the opposite direction of the Gradient of the Loss function w.r.t to the Model’s parameters.
+        </p>
+        <img src="img/gradient.jpg">
+      </div>
+      <div class="train_network" id="article_7">
+        <h2>Variants of Gradient Descent</h2>
+        <p>
+          The traditional Batch Gradient Descent will calculate the gradient of the whole Data set but will perform only one update , hence it can be very slow and hard to control for datasets which are very very large and don’t fit in the Memory. How big or small of an update to do is determined by the Learning Rate -η , and it is guaranteed to converge to the global minimum for convex error surfaces and to a local minimum for non-convex surfaces.Another thing while using Standard batch Gradient descent is that it computes redundant updates for large data sets.
+        </p>
+        <ol>
+          <li>Stochastic gradient descent</li>
+          <p>
+            Stochastic Gradient Descent(SGD) on the other hand performs a parameter update for each training example .It is usually much faster technique.It performs one update at a time.
+            <strong>θ=θ−η⋅∇J(θ;x(i);y(i)) , where {x(i) ,y(i)} are the training examples.</strong>
+            But the problem with SGD is that due to the frequent updates and fluctuations it ultimately complicates the convergence to the exact minimum and will keep overshooting due to the frequent fluctuations .
+          </p>
+          <img src="img/stochastic.jpg">
+          <li>Mini Batch Gradient Descent</li>
+          <p>
+            we can split our training set into smaller sets and implement gradient descent on each batch one after the other. In this way, we can get an intuition of gradient descent before finishing entire training set. It makes the algorithm faster and more efficient. It is called mini batch gradient descent.
+          </p>
+          <img src="img/mini_batch.jpg">
+          <p>
+            In contrast with batch gradient descent where cost function smoothly decays, mini-batch gradient has a little bit noisy cost function but still trend downwards. The reason for the noise is that there are some harder mini batches which cause oscillation to cost function.
+            The most important thing is to select the size of each mini batch. If size is very large (say m) then it will again behave as batch gradient descent (very slow) and if it is very small (say 1) then each example will be a mini batch and it becomes stochastic gradient descent with very large noise. It won’t ever converge and it’ll always just kind of oscillate and wander around the region of the minimum.
+          </p>
+        </ol>
       </div>
     </ol>
   </body>
