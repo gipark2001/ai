@@ -24,6 +24,31 @@
         </p>
         <img src="img/gradient.jpg">
       </div>
+      <div class="train_network" id="article_3">
+        <h2>Variants of Gradient Descent</h2>
+        <p>
+          The traditional Batch Gradient Descent will calculate the gradient of the whole Data set but will perform only one update , hence it can be very slow and hard to control for datasets which are very very large and don’t fit in the Memory. How big or small of an update to do is determined by the Learning Rate -η , and it is guaranteed to converge to the global minimum for convex error surfaces and to a local minimum for non-convex surfaces.Another thing while using Standard batch Gradient descent is that it computes redundant updates for large data sets.
+        </p>
+        <ol>
+          <li>Stochastic gradient descent</li>
+          <p>
+            Stochastic Gradient Descent(SGD) on the other hand performs a parameter update for each training example .It is usually much faster technique.It performs one update at a time.
+            <strong>θ=θ−η⋅∇J(θ;x(i);y(i)) , where {x(i) ,y(i)} are the training examples.</strong>
+            But the problem with SGD is that due to the frequent updates and fluctuations it ultimately complicates the convergence to the exact minimum and will keep overshooting due to the frequent fluctuations .
+          </p>
+          <img src="img/stochastic.jpg">
+          <li>Mini Batch Gradient Descent</li>
+          <p>
+            we can split our training set into smaller sets and implement gradient descent on each batch one after the other. In this way, we can get an intuition of gradient descent before finishing entire training set. It makes the algorithm faster and more efficient. It is called mini batch gradient descent.
+          </p>
+          <img src="img/mini_batch.jpg">
+          <p>
+            In contrast with batch gradient descent where cost function smoothly decays, mini-batch gradient has a little bit noisy cost function but still trend downwards. The reason for the noise is that there are some harder mini batches which cause oscillation to cost function.
+
+The most important thing is to select the size of each mini batch. If size is very large (say m) then it will again behave as batch gradient descent (very slow) and if it is very small (say 1) then each example will be a mini batch and it becomes stochastic gradient descent with very large noise. It won’t ever converge and it’ll always just kind of oscillate and wander around the region of the minimum.
+          </p>
+        </ol>
+      </div>
     </ol>
   </body>
 </html>
