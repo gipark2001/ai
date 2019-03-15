@@ -7,6 +7,23 @@
     <link rel="stylesheet" type="text/css" href="css/train_network.css">
   </head>
   <body>
-
+    <ol>
+      <div class="train_network" id="article_1">
+        <h2>What are Optimization Algorithms ?</h2>
+        <p>
+          Optimization algorithms helps us to minimize (or maximize) an Objective function (another name for Error function) E(x) which is simply a mathematical function dependent on the Model’s internal learnable parameters which are used in computing the target values(Y) from the set of predictors(X) used in the model. For example — we call the Weights(W) and the Bias(b) values of the neural network as its internal learnable parameters which are used in computing the output values and are learned and updated in the direction of optimal solution i.e minimizing the Loss by the network’s training process and also play a major role in the training process of the Neural Network Model .
+          <strong>The internal parameters of a Model play a very important role in efficiently and effectively training a Model and produce accurate results. This is why we use various Optimization strategies and algorithms to update and calculate appropriate and optimum values of such model’s parameters which influence our Model’s learning process and the output of a Model.</strong>
+        </p>
+      </div>
+      <div class="train_network" id="article_2">
+        <h2>Gradient Descent</h2>
+        <p>
+          Gradient Descent is the most important technique and the foundation of how we train and optimize Intelligent Systems.
+          θ=θ−η⋅∇J(θ) — is the formula of the parameter updates, where ‘η’ is the learning rate ,’∇J(θ)’ is the Gradient of Loss function-J(θ) w.r.t parameters-‘θ’.
+          <br>It is the most popular Optimization algorithms used in optimizing a Neural Network. Now gradient descent is majorly used to do Weights updates in a Neural Network Model , i.e update and tune the Model’s parameters in a direction so that we can minimize the Loss function. Now we all know a Neural Network trains via a famous technique called Backpropagation , in which we first propagate forward calculating the dot product of Inputs signals and their corresponding Weights and then apply a activation function to those sum of products, which transforms the input signal to an output signal and also is important to model complex Non-linear functions and introduces Non-linearities to the Model which enables the Model to learn almost any arbitrary functional mappings.<br>After this we propagate backwards in the Network carrying Error terms and updating Weights values using Gradient Descent, in which we calculate the gradient of Error(E) function with respect to the Weights (W) or the parameters , and update the parameters (here Weights) in the opposite direction of the Gradient of the Loss function w.r.t to the Model’s parameters.
+          <img src="img/gradient.jpg">
+        </p>
+      </div>
+    </ol>
   </body>
 </html>
