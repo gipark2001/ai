@@ -16,3 +16,7 @@ img {
   height: 400px;
   width: auto;
 }
+.train_network li {
+  font-size: 20px;
+  font-weight: bold;
+}
