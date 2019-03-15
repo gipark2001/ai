@@ -33,18 +33,31 @@
         </p>
         <ul>
           <li>Sigmoid</li>
+          <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/faaa0c014ae28ac67db5c49b3f3e8b08415a3f2b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:15.89ex; height:5.509ex;" alt="{\displaystyle f(x)={\frac {1}{1+e^{-x}}}}">
           <img src="img/sigmoid_act.jpg">
           <p>
             Sigmoid function takes a real-valued number and “squashes” it into range between 0 and 1, i.e.,
             <strong>σ(x)∈(0,1)</strong>In particular, large negative numbers become 0 and large positive numbers become 1. Moreover, the sigmoid function has a nice interpretation as the firing rate of a neuron: from not firing at all (0) to fully-saturated firing at an assumed maximum frequency
           </p>
           <li>Tanh</li>
+          <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f1b5f1173b93d23c64a0d3508028f8649a5a14e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:26.45ex; height:5.843ex;" alt="{\displaystyle f(x)=\tanh x={\frac {e^{x}-e^{-x}}{e^{x}+e^{-x}}}}">
           <img src="img/tanh_act.jpg">
           <p>
             The hyperbolic tangent (tanh) function (used for hidden layer neuron output) is an alternative to Sigmoid function. It is defined by the formula
           </p>
+          <li>Rectified Linear(ReLU)</li>
+          <img id="https://t1.daumcdn.net/cfile/tistory/246B094F57F226C036" src="https://t1.daumcdn.net/cfile/tistory/246B094F57F226C036" width="244" height="91" style="width: 244px; height: 91px;">
+          <img src="img/relu_act.jpg">
+          <p>
+            The ReLU function is more effectively than the widely used logistic sigmoid and its more practical counterpart, the hyperbolic tangent.
+          </p>
+          <li>Softmax</li>
+          <img src="img/softmax_act.jpg">
+          <p>
+            In probability theory, the output of the Softmax function can be used to represent a categorical distribution, that is, a probability distribution over
+            K different possible outcomes. In fact, it is the gradient-log-normalizer of the categorical probability distribution. Here is an example of Softmax application
+          </p>
         </ul>
-
       </div>
       <div class="loss_function">
         <h2><li>Loss Function</li> </h2>
@@ -57,10 +70,7 @@
         </p>
       </div>
       <div class="train_network">
-        <h2><li>Training Network</li> </h2>
-        <p>
-
-        </p>
+        <h2><a href="train_network.html"><li>Training Network</li></a> </h2>
       </div>
     </ol>
   </body>
