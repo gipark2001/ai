@@ -109,6 +109,37 @@
           </p>
         </ol>
       </div>
+      <div class="train_network" id="article_8">
+        <h2><li>Backpropagation</li></h2>
+          <ol>
+            <h3><li>Model initialisation</li></h3>
+            <p>
+              The first step of the learning, is to start from somewhere: the initial hypothesis. Like in genetic algorithms and evolution theory, neural networks can start from anywhere. Thus a random initialisation of the model is a common practice. The rational behind is that from wherever we start, if we are perseverant enough and through an iterative learning process, we can reach the pseudo-ideal model.
+            </p>
+            <h3><li>Forward propagate</li></h3>
+            <p>
+              The natural step to do after initialising the model at random, is to check its performance.
+              We start from the input we have, we pass them through the network layer and calculate the actual output of the model streightforwardly.
+              This step is called forward-propagation, because the calculation flow is going in the natural forward direction from the input -> through the neural network -> to the output.
+            </p>
+            <h3><li>Loss function</li></h3>
+            <p>
+              At this stage, in one hand, we have the actual output of the randomly initialised neural network.
+              On the other hand, we have the desired output we would like the network to learn.
+              In order to be able to generalise to any problem, we define what we call: loss function. Basically it is a performance metric on how well the NN manages to reach its goal of generating outputs as close as possible to the desired values.<br>
+              The most intuitive loss function is simply loss = (Desired output — actual output). However this loss function returns positive values when the network undershoot (prediction < desired output), and negative values when the network overshoot (prediction > desired output). If we want the loss function to reflect an absolute error on the performance regardless if it’s overshooting or undershooting we can define it as:
+              <strong>loss = Absolute value of (desired — actual ).</strong>Simply speaking, the machine learning goal becomes then to minimise the loss function (to reach as close as possible to 0).
+              We can just transform our machine learning problem now to an optimisation process that aims to minimise this loss function.
+            </p>
+            <h3><li>Differentiation</li></h3>
+            <ul>
+              <li><p>we have a loss of 0, since the neural network actual output will fit perfectly the training set.</p> </li>
+              <li><p>we have a positive loss function, but the derivative is negative, meaning that an increase of weight will decrease the loss function.</p> </li>
+              <li><p>the loss is 0 and the derivative is 0, we reached a perfect model, nothing is needed.</p> </li>
+              <li><p>the loss becomes positive again, but the derivative is as well positive, meaning that any more increase in the weight, will increase the losses even more!!</p> </li>
+            </ul>
+          </ol>
+      </div>
     </ol>
   </body>
 </html>
