@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Under Over Fitting</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/summary_machine_learning.css">
+  </head>
+  <body>
+    <h2>Total Prediction Error</h2>
+    <img src="img/total_error.jpg">
+    <img src="img/total_error_1.jpg" alt="">
+    <p>
+      There is a very delicate balancing act when machine learning algorithms try to predict things. On the one hand, we want our algorithm to model the training data very closely, otherwise we’ll miss relevant features and interesting trends.
+      However, on the other hand we don’t want our model to fit too closely, and risk over-interpreting every outlier and irregularity.
+    </p>
+    <img src="img/complexity_vs_error.jpg">
+    <ol>
+      <li>Any low complexity model- Will be prone to underfitting because of high bias and low variance</li>
+      <li>Any high complexity model(Decision tress)- Will be prone to overfitting due to low bias and high variance</li>
+    </ol>
+    <p>
+      The best we can do is try to settle somewhere in the middle of the spectrum, where the purple pointer is.
+    </p>
+    <img src="img/optimal_error.jpg">
+  </body>
+</html>
